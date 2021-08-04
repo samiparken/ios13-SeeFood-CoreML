@@ -1,19 +1,23 @@
-//
-//  ViewController.swift
-//  ios13-SeeFood-CoreML
-//
-//  Created by Sam on 2021-08-04.
-//
-
 import UIKit
+import CoreML
+import Vision
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController,
+                      UIImagePickerControllerDelegate,
+                      UINavigationControllerDelegate {
+    
+    @IBOutlet weak var imageView: UIImageView!
+        
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
     }
 
+    
+//MARK: - Action
+    @IBAction func cameraTapped(_ sender: UIBarButtonItem) {
+    }
+    
 
 }
 
