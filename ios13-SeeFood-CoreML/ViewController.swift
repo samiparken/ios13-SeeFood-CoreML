@@ -14,7 +14,7 @@ class ViewController: UIViewController,
         super.viewDidLoad()
         
         imagePicker.delegate = self
-        imagePicker.sourceType = .camera
+        imagePicker.sourceType = .photoLibrary // <=> .photoLibrary .camera
         imagePicker.allowsEditing = false
 
     }
@@ -25,7 +25,7 @@ class ViewController: UIViewController,
             imageView.image = userImage
         }
         
-        imagePicker.dismiss(animated: true, completion: nil)        
+        imagePicker.dismiss(animated: true, completion: nil)
     }
     
 //MARK: - Action
